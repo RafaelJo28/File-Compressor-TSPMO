@@ -1,3 +1,54 @@
-Download Lombok
+*DOWNLOAD LOMBOK FIRST BEFORE RUNNING THE CODE*
 
-https://projectlombok.org
+✅ Step 1: Download Lombok JAR
+Go to the official site:
+👉 https://projectlombok.org/download
+
+Click to download the latest .jar file (e.g., lombok-1.18.30.jar).
+
+✅ Step 2: Add Lombok JAR to IntelliJ Project
+Open IntelliJ
+
+In the top menu, go to:
+
+arduino
+Copy
+Edit
+File > Project Structure (or press Ctrl+Alt+Shift+S)
+In the Project Structure window:
+
+On the left panel, click "Modules"
+
+Select your module (FileCompressor or whatever it's called)
+
+Go to the "Dependencies" tab (top center)
+
+Click the + button (top right) → Choose "JARs or directories..."
+
+Browse and select the downloaded lombok-<version>.jar file
+
+After adding it, set the Scope to "Provided" (or "Compile" if "Provided" isn't an option)
+
+Click Apply, then OK
+
+✅ Step 3: Rebuild Your Project
+Now do:
+
+nginx
+Copy
+Edit
+Build > Rebuild Project
+This forces IntelliJ to reprocess all annotations, including Lombok-generated methods.
+
+✅ Step 4: (Reconfirm) Enable Annotation Processing
+If you haven’t already:
+
+Go to:
+
+mathematica
+Copy
+Edit
+File > Settings > Build, Execution, Deployment > Compiler > Annotation Processors
+Check ✅ Enable annotation processing
+
+Apply and OK
