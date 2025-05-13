@@ -22,7 +22,7 @@ public class Huffman {
         }
     }
 
-    public String encode() {
+    public String encode() { // This is a node in Priority Queue, next work on one that uses a binary tree instead of a Queue.
         Queue<Node> queue = new PriorityQueue<>();
         charFrequencies.forEach((character, frequency) ->
                 queue.add(new Leaf(character, frequency))
