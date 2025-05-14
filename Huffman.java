@@ -30,7 +30,7 @@ public class Huffman {
         while (queue.size() > 1) {
             queue.add(new Node(queue.poll(), requireNonNull(queue.poll())));
         }
-        root = queue.poll(); // ✅ Fix: assign root before using it
+        root = queue.poll();
         generateHuffmanCodes(root, "");
         return getEncodedText();
     }
