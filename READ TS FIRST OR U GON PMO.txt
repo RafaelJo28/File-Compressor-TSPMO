@@ -11,9 +11,6 @@ Open IntelliJ
 
 In the top menu, go to:
 
-arduino
-Copy
-Edit
 File > Project Structure (or press Ctrl+Alt+Shift+S)
 In the Project Structure window:
 
@@ -34,9 +31,6 @@ Click Apply, then OK
 ✅ Step 3: Rebuild Your Project
 Now do:
 
-nginx
-Copy
-Edit
 Build > Rebuild Project
 This forces IntelliJ to reprocess all annotations, including Lombok-generated methods.
 
@@ -45,10 +39,9 @@ If you haven’t already:
 
 Go to:
 
-mathematica
-Copy
-Edit
 File > Settings > Build, Execution, Deployment > Compiler > Annotation Processors
 Check ✅ Enable annotation processing
 
 Apply and OK
+
+Youre Done! Yipee!
